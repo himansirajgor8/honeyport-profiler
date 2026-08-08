@@ -441,5 +441,10 @@ def run_dashboard(debug: bool = False, port: int = 8050):
     app.run(debug=debug, port=port)
 
 
+import os
+
 if __name__ == "__main__":
-    run_dashboard(debug=True)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000))
+    )
