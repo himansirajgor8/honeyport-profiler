@@ -441,10 +441,14 @@ def run_dashboard(debug: bool = False, port: int = 8050):
     app.run(debug=debug, port=port)
 
 
-import os
+# Create the Dash application for Gunicorn/Render
+app = create_app()
+server = app.server
+
 
 if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
-        port=int(os.environ.get("PORT", 5000))
+        port=int(os.environ.get("PORT", 5000)),
+        debug=False
     )
