@@ -1,0 +1,16 @@
+.env
+*.env
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+data/mock_logs.csv
+data/profiles.csv
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

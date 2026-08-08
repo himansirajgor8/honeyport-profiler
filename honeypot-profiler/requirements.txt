@@ -1,0 +1,9 @@
+elasticsearch
+pandas
+scikit-learn
+plotly
+dash
+requests
+reportlab
+folium
+numpy

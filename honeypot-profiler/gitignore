@@ -1,0 +1,31 @@
+# Environment & secrets
+.env
+*.env
+config/secrets.py
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Generated data (regeneratable via --mock)
+data/mock_logs.csv
+data/profiles.csv
+data/*.csv
+data/*.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
